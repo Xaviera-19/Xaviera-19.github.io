@@ -1,0 +1,24 @@
+// 整個頁面歸零
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// 頁首
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(142, 127, 255);
+}
+// 頁面內容
+main {
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: bisque;
+}
+// 頁尾
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(142, 127, 255);
+}
