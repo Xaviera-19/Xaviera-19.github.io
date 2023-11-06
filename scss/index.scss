@@ -3,22 +3,58 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
+  z-index: 0;
 }
-// 頁首
-header {
-  width: 100%;
-  height: 100px;
-  background-color: rgb(142, 127, 255);
+// 動畫畫布
+canvas {
+  width: 100% !important;
+  position: absolute;
+  z-index: 1;
 }
-// 頁面內容
-main {
+// 顯示畫面
+#main{
+  position: absolute;
+  z-index: 2;
   width: 100%;
-  height: calc(100vh - 150px);
-  background-color: bisque;
-}
-// 頁尾
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: rgb(142, 127, 255);
+  // 頁首
+  header {
+    // position: absolute;
+    // z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(142, 127, 255, 0.35);
+    #nav {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        width: 80px;
+        height: 25px;
+        background-color: aliceblue;
+        button {
+          // border: 0;
+          background-color: transparent;
+          align-self: center;
+        }
+      }
+    }
+  }
+  // 頁面內容
+  main {
+    // position: absolute;
+    // z-index: 2;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background-color: rgba(240, 248, 255, 0.126);
+  }
+  // 頁尾
+  footer {
+    // position: absolute;
+    // z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(142, 127, 255, 0.35);
+  }
 }
